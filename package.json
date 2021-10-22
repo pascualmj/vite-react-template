@@ -1,6 +1,25 @@
 {
-  "name": "vite-project",
-  "version": "0.0.0",
+  "name": "vite-react-template",
+  "version": "0.0.1",
+  "description": "Basic Vite React template to start your new project.",
+  "author": {
+    "name": "@pascualmj Manuel Pascual"
+  },
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pascualmj/vite-react-template.git"
+  },
+  "homepage": "https://github.com/pascualmj/vite-react-template",
+  "keywords": [
+    "template",
+    "react",
+    "vite",
+    "typescript",
+    "web",
+    "browser",
+    "javascript"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
