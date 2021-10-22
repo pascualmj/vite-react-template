@@ -1,4 +1,4 @@
-import { createContext, ReactNode, useState, useMemo } from "react";
+import { createContext, ReactNode, useState, useMemo } from 'react';
 
 interface IAuthContextValue {
   isAuthenticated: boolean;
@@ -6,9 +6,7 @@ interface IAuthContextValue {
   logout: () => void;
 }
 
-export const AuthContext = createContext<IAuthContextValue>(
-  {} as IAuthContextValue
-);
+export const AuthContext = createContext<IAuthContextValue>({} as IAuthContextValue);
 
 interface IAuthProviderProps {
   children?: ReactNode;
@@ -20,7 +18,7 @@ export const AuthProvider = ({ children }: IAuthProviderProps) => {
     () => ({
       isAuthenticated,
       logout,
-      login,
+      login
     }),
     [isAuthenticated]
   );
@@ -33,5 +31,5 @@ export const AuthProvider = ({ children }: IAuthProviderProps) => {
     setIsAuthenticated(true);
   }
 
-  return <AuthContext.Provider value={memoizedValue} children={children} />;
+  return <AuthContext.Provider value={memoizedValue}>{children}</AuthContext.Provider>;
 };

@@ -1,9 +1,9 @@
-import { lazy, ExoticComponent } from "react";
-import { IRoute } from "app-types/routing";
+import { lazy, ExoticComponent } from 'react';
+import { IRoute } from 'app-types/routing';
 
-import * as routesConstants from "../constants/routes";
+import * as routesConstants from '../constants/routes';
 
-const Profile = lazy(() => import("../../pages/profile/Profile"));
+const Profile = lazy(() => import('../../pages/profile/Profile'));
 
 export const privateRoutes: IRoute<ExoticComponent>[] = [
   {
@@ -11,6 +11,6 @@ export const privateRoutes: IRoute<ExoticComponent>[] = [
     path: routesConstants.APP_PATHS.Profile,
     component: Profile,
     exact: true,
-    auth: true,
-  },
+    auth: true
+  }
 ];

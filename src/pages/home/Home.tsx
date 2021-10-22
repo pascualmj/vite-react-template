@@ -1,7 +1,7 @@
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
-import { APP_PATHS } from "../../router/constants/routes";
-import { useAuth } from "../../hooks";
+import { APP_PATHS } from '../../router/constants/routes';
+import { useAuth } from '../../hooks';
 
 const Home = () => {
   const { login } = useAuth();

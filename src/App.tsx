@@ -1,6 +1,6 @@
-import { APP_TITLE } from "./config/env";
-import { AuthProvider } from "./contexts/auth/AuthContext";
-import MainRouter from "./router/MainRouter";
+import { APP_TITLE } from './config/env';
+import { AuthProvider } from './contexts/auth/AuthContext';
+import MainRouter from './router/MainRouter';
 
 console.log(APP_TITLE);
 
